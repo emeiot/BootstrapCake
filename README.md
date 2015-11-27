@@ -14,8 +14,7 @@ BootstrapCake is a shell template for rapidly developing beautiful Bootstrap the
 
 ```
 class AppController extends Controller {
-	public function beforeFilter(){
-		$this->layout = 'bootstrap';
+	public $theme = "AdminLTEv2";
 	}
 }
 ```
