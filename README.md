@@ -12,12 +12,22 @@ BootstrapCake is a shell template for rapidly developing beautiful Bootstrap the
 * Extract the files into the proper directory.
 * Update your App Controller (app/Controller/AppController.php) to use the Bootstrap layout
 
+For original bootstrap template:
+```
+class AppController extends Controller {
+    public function beforeFilter(){
+        $this->layout = 'bootstrap';
+    }
+}
+```
+
+For AdminLTEv2 template:
 ```
 class AppController extends Controller {
 	public $theme = "AdminLTEv2";
 	}
-}
 ```
+
 
 * Start baking! If you've never used the console, here's a great tutorial: [http://book.cakephp.org/2.0/en/console-and-shells/code-generation-with-bake.html](http://book.cakephp.org/2.0/en/console-and-shells/code-generation-with-bake.html)
 * Make sure you select the bootstrap template when prompted
